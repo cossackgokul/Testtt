@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '163116907386298',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <h1>Find The Rat</h1>
+  <a href="Game.html"><img src="Play.png"class="wobble-vertical"width="80" height="80" hspace="50" vspace="50"></img></a>;
+  
+  <h2>Instructions</h2>
+  <p>Find the empty squares while avoiding the Rat. The faster you clear the board, the better your score.</p>
+ 
+<ul style="list-style:square">
+<li>Uncover a Rat, and the game ends.</li>
+<li>Uncover an empty square, and you keep playing.</li>
+<li>Uncover a number, and it tells you how many mines lay hidden in the eight surrounding squares information you use to deduce which nearby squares are safe to click.</li>
+</ul>
+<h3>Hint</h3>
+  <p>If you suspect a square conceals a mine, right-click it. This puts a black box on the square.</p>
+  <p>If three squares in a row display 2-3-2, then you know three mines are probably lined up beside that row. If a square says 8, every surrounding square is Rat.</p>
+  <p>Not sure where to click next? Try clearing some unexplored territory. You're better off clicking in the middle of unmarked squares than in an area you suspect is Rat.
+</p>
+
+</body>
+</html>
